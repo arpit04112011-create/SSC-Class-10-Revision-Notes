@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSC Class 10 Revision Notes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75'>📚</text></svg>">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">📚 SSC Revision</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#subjects" class="nav-link">Subjects</a></li>
+                <li><a href="#quiz" class="nav-link">Quiz</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">🌙</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Class 10 SSC Revision Notes</h1>
+            <p>Complete study material for all subjects</p>
+            <input type="text" class="search-bar" id="searchBar" placeholder="Search topics...">
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Subjects Section -->
+        <section class="subjects-section" id="subjects">
+            <h2>Select a Subject</h2>
+            <div class="subject-grid">
+                <div class="subject-card" data-subject="Mathematics">
+                    <span class="subject-icon">📐</span>
+                    <h3>Mathematics</h3>
+                </div>
+                <div class="subject-card" data-subject="Science">
+                    <span class="subject-icon">🔬</span>
+                    <h3>Science</h3>
+                </div>
+                <div class="subject-card" data-subject="English">
+                    <span class="subject-icon">📖</span>
+                    <h3>English</h3>
+                </div>
+                <div class="subject-card" data-subject="Social Studies">
+                    <span class="subject-icon">🌍</span>
+                    <h3>Social Studies</h3>
+                </div>
+                <div class="subject-card" data-subject="Hindi">
+                    <span class="subject-icon">🇮🇳</span>
+                    <h3>Hindi</h3>
+                </div>
+                <div class="subject-card" data-subject="Marathi">
+                    <span class="subject-icon">📝</span>
+                    <h3>Marathi</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Notes Display Section -->
+        <section class="notes-section" id="notesSection" style="display: none;">
+            <button class="back-btn" id="backBtn">← Back</button>
+            <h2 id="subjectTitle"></h2>
+            <div class="notes-content" id="notesContent"></div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section class="quiz-section" id="quiz">
+            <h2>Quick Quiz</h2>
+            <div class="quiz-container" id="quizContainer">
+                <div class="quiz-card">
+                    <p id="quizQuestion">Click "Start Quiz" to begin</p>
+                    <div class="options" id="optionsContainer"></div>
+                    <button class="btn" id="startQuizBtn">Start Quiz</button>
+                    <button class="btn" id="nextQuizBtn" style="display: none;">Next Question</button>
+                    <p id="quizScore" style="margin-top: 10px;"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+            <h3>SSC Class 10 Revision Notes</h3>
+            <p>Your complete guide to success</p>
+            <div class="social-links">
+                <a href="#">📧 Email</a>
+                <a href="#">📱 WhatsApp</a>
+                <a href="#">🐦 Twitter</a>
+            </div>
+            <p>&copy; 2024 SSC Revision Notes. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
